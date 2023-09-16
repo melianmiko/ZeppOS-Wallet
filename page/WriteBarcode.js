@@ -1,6 +1,6 @@
 import { CardsStorage } from "../utils/CardsStorage";
-import { JsBarcode } from "../lib/3rd/JsBarcode/JsBarcode.js";
-import { CanvasTGA } from "../lib/CanvasTGA.js";
+import { JsBarcode } from "../lib/mmk/3rd/JsBarcode/JsBarcode.js";
+import { CanvasTGA } from "../lib/mmk/CanvasTGA.js";
 import { autoPrettifyBarcode } from "../utils/CanvasTools";
 import { CardWriterUI } from "../utils/CardWriterUI";
 

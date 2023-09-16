@@ -1,6 +1,6 @@
-import { CanvasTGA } from "../lib/CanvasTGA.js";
-import { deviceRoundRadius } from "../lib/DeviceIdentifier.js";
-import {SCREEN_WIDTH, SCREEN_HEIGHT} from "../lib/UiParams";
+import { CanvasTGA } from "../lib/mmk/CanvasTGA.js";
+import { deviceRoundRadius } from "../lib/mmk/DeviceIdentifier.js";
+import {SCREEN_WIDTH, SCREEN_HEIGHT} from "../lib/mmk/UiParams";
 
 export function autoPrettifyBarcode(canvas) {
 	const screenWidth = SCREEN_WIDTH - 8;

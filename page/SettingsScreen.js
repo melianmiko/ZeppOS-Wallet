@@ -1,5 +1,5 @@
-import { AppGesture } from "../lib/AppGesture";
-import { ListScreen } from "../lib/ListScreen";
+import { AppGesture } from "../lib/mmk/AppGesture";
+import { ListScreen } from "../lib/mmk/ListScreen";
 
 class SettingsScreen extends ListScreen {
   start() {
@@ -24,6 +24,13 @@ class SettingsScreen extends ListScreen {
       icon: "icons/backup.png",
       callback: () => hmApp.gotoPage({
         url: "page/BackupTool"
+      })
+    });
+    this.row({
+      text: "Sync",
+      icon: "icons/backup.png",
+      callback: () => hmApp.gotoPage({
+        url: "page/RemoteManScreen"
       })
     });
 

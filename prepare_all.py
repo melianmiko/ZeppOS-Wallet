@@ -6,13 +6,14 @@ import os
 
 project = Path(".").resolve()
 common_assets = project / "assets" / "common"
-lib_assets = project / "lib" / "assets"
+lib_assets = project / "lib" / "mmk" / "assets"
 
 pages = [
   "page/index",
   "page/AboutScreen",
   "page/AdvEditor",
   "page/BackupTool",
+  "page/RemoteManScreen",
   "page/CardView",
   "page/NewCardPicker",
   "page/NewCardKeyboardScreen",
@@ -54,6 +55,9 @@ for target_id in app_json["targets"]:
 
   # App.json
   app_json["targets"][target_id]["module"] = {
+    "app-side": {
+      "path": "app-side/index"
+    },
     "page": {
       "pages": pages
     }

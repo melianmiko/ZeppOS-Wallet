@@ -1,7 +1,7 @@
-import {Path} from "../lib/Path";
+import {Path} from "../lib/mmk/Path";
 import {CardsStorage} from "../utils/CardsStorage";
-import {TouchEventManager} from "../lib/TouchEventManager";
-import {SCREEN_MARGIN_Y, SCREEN_MARGIN_X, WIDGET_WIDTH, SCREEN_HEIGHT} from "../lib/UiParams";
+import {TouchEventManager} from "../lib/mmk/TouchEventManager";
+import {SCREEN_MARGIN_Y, SCREEN_MARGIN_X, WIDGET_WIDTH, SCREEN_HEIGHT} from "../lib/mmk/UiParams";
 
 class HomePage {
   constructor() {

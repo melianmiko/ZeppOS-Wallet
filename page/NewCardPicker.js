@@ -1,14 +1,13 @@
-import {TouchEventManager} from "../lib/TouchEventManager";
+import {TouchEventManager} from "../lib/mmk/TouchEventManager";
 import {CardTypes} from "../utils/database";
-import { AppGesture } from "../lib/AppGesture";
+import { AppGesture } from "../lib/mmk/AppGesture";
 import {
-  SCREEN_MARGIN_Y, 
   SCREEN_MARGIN_X, 
   BASE_FONT_SIZE, 
   WIDGET_WIDTH, 
   SCREEN_WIDTH, 
   SCREEN_HEIGHT
-} from "../lib/UiParams";
+} from "../lib/mmk/UiParams";
 
 class NewCardPicker {
   build() {
@@ -39,7 +38,7 @@ class NewCardPicker {
       y,
       w: SCREEN_WIDTH,
       h: 96,
-      font_size: BASE_FONT_SIZE,
+      text_size: BASE_FONT_SIZE,
       text: "Вручную",
       color: 0xAAAAAA,
       click_func: () => {
@@ -110,6 +109,7 @@ Page({
     AppGesture.init();
 
     hmSetting.setBrightScreen(600);
+    hmUI.setStatusBarVisible(false);
     (new NewCardPicker()).build();
   },
   // onDestroy() {

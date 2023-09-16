@@ -1,4 +1,4 @@
-import {Path} from "../lib/Path";
+import {Path} from "../lib/mmk/Path";
 
 export class CardsStorage {
 	constructor() {

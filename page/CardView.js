@@ -1,6 +1,6 @@
 import { CardsStorage } from "../utils/CardsStorage";
-import { goBack } from "../lib/bugWorkaround";
-import { AppGesture } from "../lib/AppGesture";
+import { goBack } from "../lib/mmk/bugWorkaround";
+import { AppGesture } from "../lib/mmk/AppGesture";
 import {
   SCREEN_MARGIN_X, 
   SCREEN_MARGIN_Y, 
@@ -8,7 +8,7 @@ import {
   SCREEN_HEIGHT, 
   WIDGET_WIDTH,
   BASE_FONT_SIZE
-} from "../lib/UiParams";
+} from "../lib/mmk/UiParams";
 
 class CardViewScreen {
   constructor(params) {
@@ -19,8 +19,11 @@ class CardViewScreen {
 
   build() {
     this.lastBrightness = hmSetting.getBrightness();
-    hmSetting.setBrightness(100);
+    this.lastAutoBrightState = hmSetting.getScreenAutoBright();
+
+    hmSetting.setScreenAutoBright(false);
     hmSetting.setBrightScreen(180);
+    hmSetting.setBrightness(100);
     hmUI.setStatusBarVisible(false);
 
     this.initGestures();
@@ -118,6 +121,7 @@ class CardViewScreen {
   }
 
   finish() {
+    hmSetting.setScreenAutoBright(this.lastAutoBrightState);
     hmSetting.setBrightness(this.lastBrightness);
     hmSetting.setBrightScreenCancel();
     hmApp.unregisterGestureEvent();

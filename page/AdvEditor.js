@@ -1,6 +1,6 @@
-import { AppGesture } from "../lib/AppGesture";
-import {ScreenBoard} from "../lib/ScreenBoard";
-import {TouchEventManager} from "../lib/TouchEventManager";
+import { AppGesture } from "../lib/mmk/AppGesture";
+import {ScreenBoard} from "../lib/mmk/ScreenBoard";
+import {TouchEventManager} from "../lib/mmk/TouchEventManager";
 import {CardsStorage} from "../utils/CardsStorage";
 import {
   SCREEN_MARGIN_X, 
@@ -9,7 +9,7 @@ import {
   SCREEN_HEIGHT, 
   WIDGET_WIDTH,
   BASE_FONT_SIZE
-} from "../lib/UiParams";
+} from "../lib/mmk/UiParams";
 
 const FORMATS = [
   "QR",
@@ -73,7 +73,7 @@ class AdvEditorScreen {
   }
 
   create() {
-    this.data.color = eval("0x" + this.data.color);
+    this.data.color = Number("0x" + this.data.color);
     CardsStorage.startWrite(this.data);
   }
 

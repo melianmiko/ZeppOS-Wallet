@@ -1,10 +1,9 @@
 import { CardsStorage } from "../utils/CardsStorage";
-import { CanvasTGA } from "../lib/CanvasTGA.js";
-import { autoPrettifyBarcode } from "../utils/CanvasTools";
+import { CanvasTGA } from "../lib/mmk/CanvasTGA.js";
 import { CardWriterUI } from "../utils/CardWriterUI";
-import {qrcode} from "../lib/3rd/qrcode";
-import {deviceClass, deviceRoundRadius} from "../lib/DeviceIdentifier";
-import {SCREEN_HEIGHT, SCREEN_WIDTH} from "../lib/UiParams";
+import {qrcode} from "../lib/mmk/3rd/qrcode";
+import {deviceClass, deviceRoundRadius} from "../lib/mmk/DeviceIdentifier";
+import {SCREEN_HEIGHT, SCREEN_WIDTH} from "../lib/mmk/UiParams";
 
 class QRWriter extends CardWriterUI {
   getSize() {

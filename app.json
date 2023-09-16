@@ -23,12 +23,16 @@
   "targets": {
     "mi-band-7": {
       "module": {
+        "app-side": {
+          "path": "app-side/index"
+        },
         "page": {
           "pages": [
             "page/index",
             "page/AboutScreen",
             "page/AdvEditor",
             "page/BackupTool",
+            "page/RemoteManScreen",
             "page/CardView",
             "page/NewCardPicker",
             "page/NewCardKeyboardScreen",
@@ -86,12 +90,16 @@
     },
     "gts-4-mini": {
       "module": {
+        "app-side": {
+          "path": "app-side/index"
+        },
         "page": {
           "pages": [
             "page/index",
             "page/AboutScreen",
             "page/AdvEditor",
             "page/BackupTool",
+            "page/RemoteManScreen",
             "page/CardView",
             "page/NewCardPicker",
             "page/NewCardKeyboardScreen",
@@ -117,12 +125,16 @@
     },
     "band-7": {
       "module": {
+        "app-side": {
+          "path": "app-side/index"
+        },
         "page": {
           "pages": [
             "page/index",
             "page/AboutScreen",
             "page/AdvEditor",
             "page/BackupTool",
+            "page/RemoteManScreen",
             "page/CardView",
             "page/NewCardPicker",
             "page/NewCardKeyboardScreen",
@@ -166,12 +178,16 @@
         }
       ],
       "module": {
+        "app-side": {
+          "path": "app-side/index"
+        },
         "page": {
           "pages": [
             "page/index",
             "page/AboutScreen",
             "page/AdvEditor",
             "page/BackupTool",
+            "page/RemoteManScreen",
             "page/CardView",
             "page/NewCardPicker",
             "page/NewCardKeyboardScreen",
@@ -197,12 +213,16 @@
         }
       ],
       "module": {
+        "app-side": {
+          "path": "app-side/index"
+        },
         "page": {
           "pages": [
             "page/index",
             "page/AboutScreen",
             "page/AdvEditor",
             "page/BackupTool",
+            "page/RemoteManScreen",
             "page/CardView",
             "page/NewCardPicker",
             "page/NewCardKeyboardScreen",
@@ -228,12 +248,16 @@
         }
       ],
       "module": {
+        "app-side": {
+          "path": "app-side/index"
+        },
         "page": {
           "pages": [
             "page/index",
             "page/AboutScreen",
             "page/AdvEditor",
             "page/BackupTool",
+            "page/RemoteManScreen",
             "page/CardView",
             "page/NewCardPicker",
             "page/NewCardKeyboardScreen",
@@ -259,12 +283,16 @@
         }
       ],
       "module": {
+        "app-side": {
+          "path": "app-side/index"
+        },
         "page": {
           "pages": [
             "page/index",
             "page/AboutScreen",
             "page/AdvEditor",
             "page/BackupTool",
+            "page/RemoteManScreen",
             "page/CardView",
             "page/NewCardPicker",
             "page/NewCardKeyboardScreen",

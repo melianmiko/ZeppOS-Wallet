@@ -1,9 +1,8 @@
-import { AppGesture } from "../lib/AppGesture";
-import { qrcode } from "../lib/3rd/qrcode";
-import { CardsStorage } from "../utils/CardsStorage";
-import { CanvasTGA } from "../lib/CanvasTGA.js";
-import {Path} from "../lib/Path";
-import {SCREEN_MARGIN_Y, SCREEN_MARGIN_X, SCREEN_WIDTH, WIDGET_WIDTH, SCREEN_HEIGHT} from "../lib/UiParams";
+import { AppGesture } from "../lib/mmk/AppGesture";
+import { qrcode } from "../lib/mmk/3rd/qrcode";
+import { CanvasTGA } from "../lib/mmk/CanvasTGA.js";
+import {Path} from "../lib/mmk/Path";
+import {SCREEN_MARGIN_X, SCREEN_WIDTH, WIDGET_WIDTH, SCREEN_HEIGHT} from "../lib/mmk/UiParams";
 
 class BackupTool {
 	start() {
@@ -27,7 +26,7 @@ class BackupTool {
 	}
 
 	process() {
-		const out = new Path("full", "/storage/mmk_cards.json").fetchText();
+		const out = new Path("data", "wallet.json").fetchText();
 		(new QrDumpScreen(out)).start();
 	}
 

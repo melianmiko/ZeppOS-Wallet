@@ -1,4 +1,4 @@
-import {SCREEN_WIDTH, SCREEN_HEIGHT, BASE_FONT_SIZE} from "../lib/UiParams";
+import {SCREEN_WIDTH, SCREEN_HEIGHT, BASE_FONT_SIZE} from "../lib/mmk/UiParams";
 
 export class CardWriterUI {
   start(params) {

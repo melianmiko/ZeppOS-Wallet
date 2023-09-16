@@ -1,5 +1,5 @@
-import { AppGesture } from "../lib/AppGesture";
-import { ScreenBoardSetup } from "../lib/ScreenBoardSetup";
+import { AppGesture } from "../lib/mmk/AppGesture";
+import { ScreenBoardSetup } from "../lib/mmk/ScreenBoardSetup";
 
 Page({
   onInit(p) {

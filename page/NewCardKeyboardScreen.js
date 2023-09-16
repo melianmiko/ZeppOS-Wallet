@@ -1,8 +1,8 @@
-import {ScreenBoard} from "../lib/ScreenBoard";
-import { AppGesture } from "../lib/AppGesture";
+import {ScreenBoard} from "../lib/mmk/ScreenBoard";
+import { AppGesture } from "../lib/mmk/AppGesture";
 import {CardTypes} from "../utils/database";
 import {CardsStorage} from "../utils/CardsStorage";
-import {SCREEN_WIDTH, SCREEN_HEIGHT} from "../lib/UiParams";
+import {SCREEN_WIDTH, SCREEN_HEIGHT} from "../lib/mmk/UiParams";
 
 class NewCardKeyboardScreen {
   constructor(id) {

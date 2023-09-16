@@ -1,6 +1,6 @@
-import { Path } from "../lib/Path";
-import { AppGesture } from "../lib/AppGesture";
-import { BaseAboutScreen } from "../lib/BaseAboutScreen";
+import { Path } from "../lib/mmk/Path";
+import { AppGesture } from "../lib/mmk/AppGesture";
+import { BaseAboutScreen } from "../lib/mmk/BaseAboutScreen";
 
 class AboutScreen extends BaseAboutScreen {
   constructor() {
