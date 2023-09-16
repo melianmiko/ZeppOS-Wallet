@@ -14,6 +14,7 @@
   },
   "configVersion": "v2",
   "debug": false,
+  "defaultLanguage": "ru-RU",
   "i18n": {
     "ru-RU": {
       "appName": "\u041a\u043e\u0448\u0435\u043b\u0451\u043a"
@@ -148,161 +149,6 @@
           "deviceSource": 254
         }
       ]
-    },
-    "t-rex-ultra": {
-      "platforms": [
-        {
-          "name": "t-rex-ultra",
-          "deviceSource": 6553856
-        },
-        {
-          "name": "t-rex-ultra",
-          "deviceSource": 6553857
-        }
-      ],
-      "module": {
-        "page": {
-          "pages": [
-            "page/index",
-            "page/AboutScreen",
-            "page/AdvEditor",
-            "page/BackupTool",
-            "page/CardView",
-            "page/NewCardPicker",
-            "page/NewCardKeyboardScreen",
-            "page/ScreenBoardSetup",
-            "page/SettingsScreen",
-            "page/WriteBarcode",
-            "page/WriteInt2of5",
-            "page/WritePDF417",
-            "page/WriteQR"
-          ]
-        }
-      }
-    },
-    "gtr-mini": {
-      "platforms": [
-        {
-          "name": "gtr-mini",
-          "deviceSource": 250
-        },
-        {
-          "name": "gtr-mini-2",
-          "deviceSource": 251
-        }
-      ],
-      "module": {
-        "page": {
-          "pages": [
-            "page/index",
-            "page/AboutScreen",
-            "page/AdvEditor",
-            "page/BackupTool",
-            "page/CardView",
-            "page/NewCardPicker",
-            "page/NewCardKeyboardScreen",
-            "page/ScreenBoardSetup",
-            "page/SettingsScreen",
-            "page/WriteBarcode",
-            "page/WriteInt2of5",
-            "page/WritePDF417",
-            "page/WriteQR"
-          ]
-        }
-      }
-    },
-    "gtr-4": {
-      "module": {
-        "page": {
-          "pages": [
-            "page/index",
-            "page/AboutScreen",
-            "page/AdvEditor",
-            "page/BackupTool",
-            "page/CardView",
-            "page/NewCardPicker",
-            "page/NewCardKeyboardScreen",
-            "page/ScreenBoardSetup",
-            "page/SettingsScreen",
-            "page/WriteBarcode",
-            "page/WriteInt2of5",
-            "page/WritePDF417",
-            "page/WriteQR"
-          ]
-        }
-      },
-      "platforms": [
-        {
-          "name": "gtr-4",
-          "deviceSource": 7930112
-        },
-        {
-          "name": "gtr-4-2",
-          "deviceSource": 7930113
-        }
-      ]
-    },
-    "gts-4": {
-      "platforms": [
-        {
-          "name": "gts-4",
-          "deviceSource": 7995648
-        },
-        {
-          "name": "gts-4-2",
-          "deviceSource": 7995649
-        }
-      ],
-      "module": {
-        "page": {
-          "pages": [
-            "page/index",
-            "page/AboutScreen",
-            "page/AdvEditor",
-            "page/BackupTool",
-            "page/CardView",
-            "page/NewCardPicker",
-            "page/NewCardKeyboardScreen",
-            "page/ScreenBoardSetup",
-            "page/SettingsScreen",
-            "page/WriteBarcode",
-            "page/WriteInt2of5",
-            "page/WritePDF417",
-            "page/WriteQR"
-          ]
-        }
-      }
-    },
-    "falcon": {
-      "platforms": [
-        {
-          "name": "falcon",
-          "deviceSource": 414
-        },
-        {
-          "name": "falcon-2",
-          "deviceSource": 415
-        }
-      ],
-      "module": {
-        "page": {
-          "pages": [
-            "page/index",
-            "page/AboutScreen",
-            "page/AdvEditor",
-            "page/BackupTool",
-            "page/CardView",
-            "page/NewCardPicker",
-            "page/NewCardKeyboardScreen",
-            "page/ScreenBoardSetup",
-            "page/SettingsScreen",
-            "page/WriteBarcode",
-            "page/WriteInt2of5",
-            "page/WritePDF417",
-            "page/WriteQR"
-          ]
-        }
-      }
     },
     "gtr-3-pro": {
       "platforms": [
@@ -440,8 +286,5 @@
       "minVersion": "1.0.0",
       "target": "1.0.1"
     }
-  },
-  "externalFilesList": [
-    "/storage/mmk_cards.json"
-  ]
+  }
 }

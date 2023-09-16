@@ -67,6 +67,7 @@ Page({
     AppGesture.init();
 
     hmSetting.setBrightScreen(600);
+    hmUI.setStatusBarVisible(false);
     (new NewCardKeyboardScreen(id)).build();
   },
 });

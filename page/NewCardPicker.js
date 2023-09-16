@@ -39,6 +39,7 @@ class NewCardPicker {
       y,
       w: SCREEN_WIDTH,
       h: 96,
+      font_size: BASE_FONT_SIZE,
       text: "Вручную",
       color: 0xAAAAAA,
       click_func: () => {

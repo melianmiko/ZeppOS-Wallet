@@ -19,6 +19,7 @@ class BarcodeWriter extends CardWriterUI {
       flat: data.format.startsWith("EAN"),
       height: 60,
       width: 2,
+      margin: 0,
       displayValue: false,
     });
 

@@ -1,10 +1,22 @@
 import { CanvasTGA } from "../lib/CanvasTGA.js";
+import { deviceRoundRadius } from "../lib/DeviceIdentifier.js";
 import {SCREEN_WIDTH, SCREEN_HEIGHT} from "../lib/UiParams";
 
 export function autoPrettifyBarcode(canvas) {
-	canvas = CanvasTGA.rotate90(canvas);
+	const screenWidth = SCREEN_WIDTH - 8;
+	const screenHeight = SCREEN_HEIGHT - 8;
 
-	if(canvas.height * 2 <= SCREEN_WIDTH && canvas.width * 2 <= SCREEN_HEIGHT) {
+	if(screenHeight > screenWidth) {
+		canvas = CanvasTGA.rotate90(canvas);
+	}
+
+	const imgDiagonal = Math.ceil(Math.sqrt((canvas.width * canvas.width) + (canvas.height * canvas.height)))
+	const screenDiagonal = Math.ceil(Math.sqrt((screenWidth * screenWidth + screenHeight * screenHeight))) 
+		- (deviceRoundRadius / 2);
+
+	console.log("diagonal's", imgDiagonal, screenDiagonal);
+
+	if(canvas.height * 2 <= screenHeight && canvas.width * 2 <= screenWidth && imgDiagonal * 2 <= screenDiagonal) {
 		// Scale x2
 		console.log("Perform scale x2");
 

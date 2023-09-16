@@ -2,7 +2,7 @@ import {Path} from "../lib/Path";
 
 export class CardsStorage {
 	constructor() {
-		this.file = new Path("full", "/storage/mmk_cards.json");
+		this.file = new Path("data", "wallet.json");
 		this.data = {
 			cards: [],
 			index: 0
